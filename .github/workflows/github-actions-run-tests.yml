@@ -23,6 +23,8 @@ jobs:
 
       - name: "Check Verilator"
         run: |
+          echo ${VERILATOR_ROOT}
+          echo ${PYMTL_VERILATOR_INCLUDE_DIR}
           verilator --version
 
       - name: "Install Python Dependencies"
