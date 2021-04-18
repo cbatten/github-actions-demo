@@ -38,6 +38,6 @@ jobs:
         run: |
           mkdir -p build-verilog
           cd build-verilog
-          pytest .. --test-verilog --verbose
+          pytest .. -x --tb=long --test-verilog --verbose
 
 
