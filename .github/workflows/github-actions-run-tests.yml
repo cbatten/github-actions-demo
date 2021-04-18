@@ -2,7 +2,7 @@
 # gh-actions-run-tests.yml
 #=========================================================================
 
-name: Run Tests
+name: build
 on: [push]
 jobs:
   run-tests:
