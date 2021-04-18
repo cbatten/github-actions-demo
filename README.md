@@ -1,2 +1,11 @@
-# github-actions-demo
-GitHub Actions Demo
+
+# Demo for Using GitHub Actions with PyMTL3
+
+This is the simple registered incrementer example. Here is how to run the
+tests:
+
+    % git clone git@github.com:cbatten/github-actions-pymtl
+    % mkdir github-actions-pymtl/build
+    % cd github-actions-pymtl/build
+    % pytest ..
+
