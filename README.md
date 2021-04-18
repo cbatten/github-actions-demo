@@ -9,3 +9,6 @@ tests:
     % cd github-actions-pymtl/build
     % pytest ..
 
+Status of build:
+
+https://github.com/cbatten/github-actions-pymtl3/actions/workflows/github-actions-run-tests/badge.svg
