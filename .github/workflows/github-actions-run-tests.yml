@@ -36,6 +36,9 @@ jobs:
 
       - name: "Run PyMTL3 Tests with --test-verilog"
         run: |
+          export VERILATOR_ROOT=${HOME}/verilator
+          export PATH=${VERILATOR_ROOT}/bin:${PATH}
+          export PYMTL_VERILATOR_INCLUDE_DIR=${VERILATOR_ROOT}/share/verilator/include
           mkdir -p build-verilog
           cd build-verilog
           pytest .. -x --tb=long --test-verilog --verbose
