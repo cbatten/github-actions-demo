@@ -10,11 +10,13 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: "3.7"
+
       - name: "Install Dependencies"
         run: |
           python -VV
           pip install -U git+https://github.com/pymtl/pymtl3.git@ece5745-2021
           pip list
+
       - name: "Run Tests"
           mkdir -p build
           cd build
