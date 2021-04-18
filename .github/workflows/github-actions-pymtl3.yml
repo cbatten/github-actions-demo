@@ -18,6 +18,7 @@ jobs:
           pip list
 
       - name: "Run Tests"
+        run: |
           mkdir -p build
           cd build
           pytest .. --verbose
