@@ -11,4 +11,4 @@ tests:
 
 Status of build:
 
-https://github.com/cbatten/github-actions-pymtl3/actions/workflows/github-actions-run-tests/badge.svg
+  [![Build Status](https://github.com/cbatten/github-actions-pymtl3/actions/workflows/github-actions-run-tests.yml/badge.svg)](https://github.com/cbatten/github-actions-pymtl3/actions/workflows/github-actions-run-tests.yml)
