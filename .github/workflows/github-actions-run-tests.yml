@@ -18,8 +18,8 @@ jobs:
           wget https://github.com/cornell-brg/verilator-travisci-cache/raw/master/verilator-travis-4.036.tar.gz
           tar -C ${HOME} -xzf verilator-travis-4.036.tar.gz
           echo "VERILATOR_ROOT=${HOME}/verilator" >> $GITHUB_ENV
-          echo "PATH=${VERILATOR_ROOT}/bin:${PATH}" >> $GITHUB_ENV
           echo "PYMTL_VERILATOR_INCLUDE_DIR=${VERILATOR_ROOT}/share/verilator/include" >> $GITHUB_ENV
+          echo "${VERILATOR_ROOT}/bin" >> $GITHUB_PATH
 
       - name: "Check Verilator"
         run: |
